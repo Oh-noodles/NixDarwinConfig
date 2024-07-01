@@ -10,6 +10,7 @@
     neofetch
     # iterm2
     (nerdfonts.override { fonts = [ "Hack" ]; })
+    nodejs
   ];
   programs.home-manager.enable = true;
 

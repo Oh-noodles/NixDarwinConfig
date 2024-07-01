@@ -52,6 +52,7 @@
                 "rectangle"
                 "contexts"
                 "karabiner-elements"
+                "notion"
               ];
             };
           }
