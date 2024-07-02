@@ -5,14 +5,16 @@
     relativenumber = true;
 
     autoindent = true;
+    smartindent = true;
+    breakindent = true;
+    foldmethod = "indent";
+    foldlevel = 2;
 
     expandtab = true;
     tabstop = 2;
     softtabstop = 2;
     shiftwidth = 2;
 
-    smartindent = true;
-    breakindent = true;
 
     cursorline = true;
   };

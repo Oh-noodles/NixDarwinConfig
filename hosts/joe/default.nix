@@ -4,7 +4,7 @@
 
   # home.username = "joe";
   # home.stateVersion = "22.05";
-  home.stateVersion = "23.11";
+  home.stateVersion = "24.05";
   home.packages = with pkgs; [
     htop
     neofetch
