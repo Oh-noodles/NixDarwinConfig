@@ -21,6 +21,7 @@
     # you can have multiple darwinConfigurations per flake, one per hostname
       system = "aarch64-darwin"; # "x86_64-darwin" if you're using a pre M1 mac
       modules = [
+          { nix.settings.experimental-features = [ "nix-command" "flakes" ]; }
           home-manager.darwinModules.home-manager {
             services.nix-daemon.enable = true;
             programs.zsh = {
@@ -53,6 +54,7 @@
                 "contexts"
                 "karabiner-elements"
                 "notion"
+                "notion-calendar"
               ];
             };
           }

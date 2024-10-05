@@ -8,14 +8,14 @@
     smartindent = true;
     breakindent = true;
     foldmethod = "indent";
-    foldlevel = 2;
+    foldlevel = 99;
 
     expandtab = true;
     tabstop = 2;
     softtabstop = 2;
     shiftwidth = 2;
 
-
     cursorline = true;
+    clipboard = "unnamed";
   };
 }

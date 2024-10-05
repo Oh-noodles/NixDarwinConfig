@@ -8,6 +8,7 @@
         clangd.enable = true;
         nixd.enable = true;
         html.enable = true;
+        tsserver.enable = true;
       };
       keymaps.lspBuf = {
         "gd" = "definition";
