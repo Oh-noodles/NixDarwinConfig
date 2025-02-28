@@ -2,7 +2,7 @@
   programs.nixvim.keymaps = [
     {
       key = "<leader>e";
-      action = "<CMD>Neotree toggle<CR>";
+      action = "<CMD>NvimTreeToggle<CR>";
     }
     {
       key = "<leader>cf";
@@ -41,7 +41,7 @@
     }
     {
       key = "<leader>sr";
-      action = "<cmd>lua require('spectre').toggle()cr>";
+      action = "<cmd>lua require('spectre').toggle()<cr>";
     }
     {
       key = "<leader>cd";
@@ -58,6 +58,16 @@
       key = "<C-_>";
       mode = [ "n" "t" ];
       action = "<cmd>FloatermToggle<cr>";
+    }
+    {
+      key = "<D-o>";
+      mode = [ "i" ];
+      action = "<cmd>lua require('luasnip').jump(1)<cr>";
+    }
+    {
+      key = "<D-u>";
+      mode = [ "i" ];
+      action = "<cmd>lua require('luasnip').jump(-1)<cr>";
     }
   ];
 

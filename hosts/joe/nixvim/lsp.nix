@@ -1,6 +1,5 @@
 {
   programs.nixvim.plugins = {
-    lsp-format.enable = true;
     lsp = {
       enable = true;
       servers = {
@@ -20,5 +19,6 @@
         "K" = "hover";
       };
     };
+    conform-nvim.enable = true;
   };
 }

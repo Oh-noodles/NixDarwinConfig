@@ -1,6 +1,8 @@
 {
-  programs.nixvim.plugins.neo-tree = {
+  programs.nixvim.plugins.nvim-tree = {
     enable = true;
-    filesystem.followCurrentFile.enabled = true;
+    openOnSetup = true;
+    updateFocusedFile.enable = true;
+    actions.windowPicker.enable = true;
   };
 }

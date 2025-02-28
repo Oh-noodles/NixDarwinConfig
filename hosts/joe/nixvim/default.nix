@@ -33,6 +33,7 @@
     colorschemes.cyberdream = {
       enable = true;
       settings.theme.highlights = {
+        Comment.fg = "#6b9955";
         LineNr.fg = "#dbdbdb";
         # CursorLineNr.fg = "#ffffff";
         CursorLine.bg = "#2d3036";
