@@ -60,4 +60,19 @@
       action = "<cmd>FloatermToggle<cr>";
     }
   ];
+
+  programs.nixvim.autoCmd = [
+    {
+      event = [ "FileType" ];
+      command = "lua require('telescope').setup({
+        defaults = {
+          mappings = {
+            n = {
+              ['dd'] = require('telescope.actions').delete_buffer,
+            }
+          }
+        }
+      })";
+    }
+  ];
 }

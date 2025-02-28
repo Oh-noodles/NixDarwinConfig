@@ -19,7 +19,8 @@
   outputs = { self, nixpkgs, home-manager, darwin, ... } @inputs: {
     darwinConfigurations."joe" = darwin.lib.darwinSystem {
     # you can have multiple darwinConfigurations per flake, one per hostname
-      system = "aarch64-darwin"; # "x86_64-darwin" if you're using a pre M1 mac
+      # system = "aarch64-darwin"; # "x86_64-darwin" if you're using a pre M1 mac
+      system = "x86_64-darwin"; # "x86_64-darwin" if you're using a pre M1 mac
       modules = [
           { nix.settings.experimental-features = [ "nix-command" "flakes" ]; }
           home-manager.darwinModules.home-manager {
@@ -47,14 +48,9 @@
               # updates homebrew packages on activation,
               # can make darwin-rebuild much slower (otherwise i'd forget to do it ever though)
               casks = [
-                "iina"
-                "iterm2"
-                "google-chrome"
                 "rectangle"
                 "contexts"
                 "karabiner-elements"
-                "notion"
-                "notion-calendar"
               ];
             };
           }

@@ -26,6 +26,7 @@
     ./neogit.nix
     ./markdown.nix
     ./keymaps.nix
+    ./pair.nix
   ];
   programs.nixvim = {
     enable = true;

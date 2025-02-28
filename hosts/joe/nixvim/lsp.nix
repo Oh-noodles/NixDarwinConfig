@@ -9,6 +9,8 @@
         nixd.enable = true;
         html.enable = true;
         tsserver.enable = true;
+        volar.enable = true;
+        pylsp.enable = true;
       };
       keymaps.lspBuf = {
         "gd" = "definition";

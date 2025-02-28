@@ -16,6 +16,6 @@
     shiftwidth = 2;
 
     cursorline = true;
-    clipboard = "unnamed";
+    clipboard = "unnamed"; # copy to system clipboard
   };
 }

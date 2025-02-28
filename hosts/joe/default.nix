@@ -11,6 +11,8 @@
     # iterm2
     (nerdfonts.override { fonts = [ "Hack" ]; })
     nodejs
+    inetutils
+    ranger
   ];
   programs.home-manager.enable = true;
 
@@ -24,7 +26,7 @@
   #   # updates homebrew packages on activation,
   #   # can make darwin-rebuild much slower (otherwise i'd forget to do it ever though)
   #   casks = [
-  #     "iina"
+  #     # "iina"
   #   ];
   # };
 }
